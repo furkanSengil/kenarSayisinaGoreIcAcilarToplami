@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="kenarSayisinaGoreAciHesaplama" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="urQ-NR-E47">
+                                <rect key="frame" x="191" y="431" width="32" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvS-xz-SKY">
+                                <rect key="frame" x="169" y="545" width="76.5" height="31"/>
+                                <color key="backgroundColor" red="0.2353843112779502" green="0.76663115530303028" blue="0.73961962278012605" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Hesapla"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="hesaplamaButonu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bpT-Jz-270"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kenar sayısını giriniz:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiG-bp-D42">
+                                <rect key="frame" x="129" y="390" width="156" height="21"/>
+                                <color key="backgroundColor" red="0.19008401948377593" green="0.85357481060606055" blue="0.85185794596536613" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.87354943964830689" green="0.93305480480194092" blue="0.92133620877643718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="urQ-NR-E47" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6r6-Uh-N4l"/>
+                            <constraint firstItem="dvS-xz-SKY" firstAttribute="top" secondItem="urQ-NR-E47" secondAttribute="bottom" constant="80" id="992-ET-M76"/>
+                            <constraint firstItem="urQ-NR-E47" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FE0-m6-YLz"/>
+                            <constraint firstItem="dvS-xz-SKY" firstAttribute="centerX" secondItem="jiG-bp-D42" secondAttribute="centerX" id="RNJ-3W-3JQ"/>
+                            <constraint firstItem="urQ-NR-E47" firstAttribute="top" secondItem="jiG-bp-D42" secondAttribute="bottom" constant="20" id="Zbn-Ci-yGG"/>
+                            <constraint firstItem="jiG-bp-D42" firstAttribute="centerX" secondItem="urQ-NR-E47" secondAttribute="centerX" id="dHN-eQ-7lh"/>
+                            <constraint firstItem="urQ-NR-E47" firstAttribute="top" secondItem="jiG-bp-D42" secondAttribute="bottom" constant="20" id="x8W-Uq-G04"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="kullaniciGirisi" destination="urQ-NR-E47" id="YJY-XC-QRN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="67"/>
+        </scene>
+    </scenes>
+</document>

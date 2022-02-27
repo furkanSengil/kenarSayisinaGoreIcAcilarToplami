@@ -1,9 +1,0 @@
-
-/* Class = "UILabel"; text = "Çokgenin kenar sayısını giriniz:"; ObjectID = "IIO-pY-eBl"; */
-"IIO-pY-eBl.text" = "Çokgenin kenar sayısını giriniz:";
-
-/* Class = "UIButton"; configuration.title = "Hesapla"; ObjectID = "hAf-8A-xgN"; */
-"hAf-8A-xgN.configuration.title" = "tıkla";
-
-/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hAf-8A-xgN"; */
-"hAf-8A-xgN.normalTitle" = "Button";

@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  kenarSayisinaGoreIcAcilarToplami
-//
-//  Created by Furkan Sengil on 26.02.2022.
-//
-
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
@@ -35,4 +28,3 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
 
 }
-

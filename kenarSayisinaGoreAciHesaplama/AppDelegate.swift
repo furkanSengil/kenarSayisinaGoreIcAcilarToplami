@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  kenarSayisinaGoreIcAcilarToplami
+//  kenarSayisinaGoreAciHesaplama
 //
-//  Created by Furkan Sengil on 26.02.2022.
+//  Created by Furkan Sengil on 27.02.2022.
 //
 
 import UIKit
