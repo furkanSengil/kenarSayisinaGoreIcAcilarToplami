@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="kenarSayisinaGoreIcAcilarToplami" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CyA-xh-fRI">
+                                <rect key="frame" x="177" y="431" width="60" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="ern-Db-cQd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAf-8A-xgN">
+                                <rect key="frame" x="168.5" y="525" width="77" height="31"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="G54-jr-Fgr"/>
+                                    <constraint firstAttribute="height" constant="31" id="QEg-ck-4SD"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Hesapla">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="hesaplamaButonu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9TO-kH-QNe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Çokgenin kenar sayısını giriniz:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIO-pY-eBl">
+                                <rect key="frame" x="91" y="390.5" width="232.5" height="20.5"/>
+                                <color key="backgroundColor" name="label"/>
+                                <color key="tintColor" name="arkaplan"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="232.5" id="mtx-Ys-2wS"/>
+                                    <constraint firstAttribute="height" constant="20.5" id="uJE-LG-pav"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.91129239387245875" green="0.88192643701653695" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="CyA-xh-fRI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Bp2-Bf-q2d"/>
+                            <constraint firstItem="hAf-8A-xgN" firstAttribute="top" secondItem="CyA-xh-fRI" secondAttribute="bottom" constant="60" id="K1e-8f-53h"/>
+                            <constraint firstItem="CyA-xh-fRI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UY8-p1-0f3"/>
+                            <constraint firstItem="hAf-8A-xgN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h73-eu-2iL"/>
+                            <constraint firstItem="IIO-pY-eBl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="swe-WR-3T3"/>
+                            <constraint firstItem="CyA-xh-fRI" firstAttribute="top" secondItem="IIO-pY-eBl" secondAttribute="bottom" constant="20" id="vdP-m2-3P3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="kullaniciGirisi" destination="CyA-xh-fRI" id="0dp-PQ-84g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="53"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="arkaplan">
+            <color red="0.015686274509803921" green="0.16078431372549018" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="label">
+            <color red="0.0" green="0.36078431372549019" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
